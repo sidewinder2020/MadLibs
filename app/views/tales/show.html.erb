@@ -5,6 +5,7 @@
 <%= @tale.emotion %> forever,  <%= @tale.name_4 %></p><br/><br/>
 
 
+<%= link_to "EDIT this Abomination to have your image", edit_tale_path(@tale) %><br/>
+<%= image_tag(@tale.image) %><br/>
 <%= link_to "INDEX Eulogy", tales_path %><br/>
-<%= link_to "EDIT this Abomination, you wimp", edit_tale_path(@tale) %><br/>
 <%= link_to "DELETE this Awful Insult to Literature", tale_path(@tale), method: :delete %><br/>

@@ -1,5 +1,6 @@
 <h1> Story 2 Index </h1>
-<%= link_to "Create Your Own Story", new_tale_path %><br/><br/>
+<%= link_to "Create Your Own Story", new_tale_path %><br/>
+<%= link_to "Pick Another Story", madlibs_path %><br/><br/>
 
 <% @tales.each do |tale| %>
   <li><%= link_to "Story 2", tale_path(tale) %> by: <%= tale.name_1 %></br> created on: <%= tale.created_at %></li>
